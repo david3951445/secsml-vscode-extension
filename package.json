@@ -1,0 +1,48 @@
+{
+  "name": "secsml",
+  "displayName": "SECS Message Language",
+  "description": "Syntax highlighting for SECS Message Language (SML) used in semiconductor equipment communication (e.g., S2F13, L[2], B[4]).",
+  "version": "0.0.1",
+  "publisher": "lama0116",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "SECS",
+    "SML",
+    "SECS/GEM",
+    "semiconductor",
+    "syntax",
+    "highlighting",
+    "message language"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "sml",
+        "aliases": ["SECS Message Language", "SML"],
+        "extensions": [".sml"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sml",
+        "scopeName": "source.sml",
+        "path": "./syntaxes/sml.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/david3951445/secsml-vscode-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/david3951445/secsml-vscode-extension/issues"
+  },
+  "homepage": "https://github.com/david3951445/secsml-vscode-extension",
+  "license": "MIT"
+}

@@ -1,0 +1,42 @@
+{
+  "scopeName": "source.sml",
+  "name": "SECS Message Language",
+  "patterns": [
+    {
+      "name": "entity.name.function.secsml",
+      "match": "\\bS\\d+F\\d+\\b"
+    },
+    {
+      "name": "keyword.control.direction.secsml",
+      "match": "\\b[RW]\\b"
+    },
+    {
+      "name": "keyword.type.secsml",
+      "match": "\\b(?:L|B|BOOLEAN|A|J|I[1248]|F[48]|U[1248])\\b"
+    },
+    {
+      "name": "constant.numeric.hex.secsml",
+      "match": "0x[0-9A-Fa-f]+"
+    },
+    {
+      "name": "constant.numeric.value.secsml",
+      "match": "-?\\d+(?:\\.\\d+)?"
+    },
+    {
+      "name": "string.quoted.double.secsml",
+      "match": "\"[^\"]*\""
+    },
+    {
+      "name": "punctuation.terminator.secsml",
+      "match": "\\."
+    },
+    {
+      "name": "punctuation.angle.secsml",
+      "match": "[<>]"
+    },
+    {
+      "name": "punctuation.separator.whitespace.secsml",
+      "match": "\\s+"
+    }
+  ]
+}
