@@ -1,40 +1,40 @@
 # SECS Message Language (SML) for VS Code
 
-Adds syntax highlighting for SECS Message Language (SML), commonly used in semiconductor equipment communication (e.g., `S2F13`, `L[2]`, `U4[1] 42`).
+Adds syntax highlighting for SECS Message Language (SML), commonly used in semiconductor equipment communication.
 
 ## ✨ Features
 
-* Highlights SECS data types: `L`, `A`, `B`, `U1`, `F8`, etc.
-* Distinguishes:
-
-  * Format codes
-  * Lengths (e.g., `[2]`)
-  * Values (numbers and strings)
-* Supports nested brackets `<...>`
+* Syntax highlighting for SECS message format
+* Highlights:
+  * **Type** keywords (`L`, `A`, `B`, `U1`, `F8`, etc.)
+  * **Count** indicators (e.g., `[2]`, optional)
+  * **Values** — numbers, hex, strings
+* Supports nested data blocks with angle brackets `<...>`
 
 ![Syntax Highlighting Example](images/preview.png)
 
 ## 📦 File Support
 
-* Recognizes `.sml` and `.secs` files
+* Automatically activates for `.sml` files
 * Language ID: `sml`
 
 ## 🧹 Requirements
 
-None — works out of the box in VS Code 1.102.0 or later.
+No dependencies. Works out of the box with VS Code **1.102.0** or later.
 
-## 🛠 Known Issues
+## ⚠️ Known Issues
 
-* Folding and indentation not yet supported
-* No validation or autocomplete (syntax only)
+* Code folding and auto indentation not implemented
+* No syntax validation or intellisense (highlighting only)
 
 ## 📜 Release Notes
 
 ### 0.0.1
 
-* Initial release with syntax highlighting
+* Initial release with basic syntax highlighting support
 
 ---
 
-**Enjoy coding in SML!**
-For issues or suggestions, feel free to open an issue on GitHub.
+**Enjoy working with SML in VS Code!**
+
+For feedback or feature requests, please open an issue on GitHub.
